@@ -21,13 +21,13 @@
     
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                     <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./projects.html">Projects</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="./weather.html">Weather App</a>
                     </li>
                     <li>
@@ -40,45 +40,53 @@
             </div>
         </nav>
 
-        <div class="container d-flex align-items-center flex-column" id="me">
 
-            <img class="masthead-avatar mb-5" src="./resources/img/me.svg" alt="...">
+        <div class="container" id="wwa3">
 
-            <h1 class="masthead-heading font-weight-bold text-uppercase mb-0 text-center" id="main-title">Welcome to my <del>website</del> playground.</h1>
+            <div class="card bg-dark" style="width: 28rem;">
 
-            <p class="masthead-subheading mb-0 text-center">Beginner Dev - Ambitious Project Starter - Full-Stack Oriented<br></p>
-        </div>
+                <div class="card-body text-center">
+                <h5 class="card-title">Weather in</h5>
 
-        <div class="container" id="wwa2">
+                <p class="card-text">        <div class="container">
 
-            <div class="card bg-dark" style="width: 18rem;">
-
-                <div class="card-body">
-                <h5 class="card-title">About me</h5>
-
-                <p class="card-text">Currently studying a full-stack career path.<br>I learn by doing and love challenging myself.</p>
-                <a href="https://www.linkedin.com/in/blomsterjoel/" class="btn btn-outline-light" target="_blank">View my LinkedIn</a>
+                    <div class="location h2" id="location">Allow location or search by city</div>
+                    <img src="" alt="" srcset="" id="weather-icon">
+                    <div class="desc h4">No information available.</div>
+                    
+                    <div class="weather"> 
+        
+                        <div class="c h3">Error</div>
+        
+                        <!--<div class="f">Error</div>-->
+                        <br>
+        
+                    </div>
+                    <div class="info">
+                        <h5>Sunrise: <span class="sunrise">No information available.</span></h5>
+                        <h5>Sunset: <span class="sunset">No information available.</span></h5>
+                        
+                    </div>
+                    <br>
+        
+                    <div class="nappi">
+                        <div>
+                <form onsubmit="weatherByCity(event)">
+                    <input class="haku" type="text" id="haku" placeholder="Location...">
+                </form>
+                </div>
+                <br>
+                    <div class="haku2">
+                    <button type="submit">Search</button>
+        
+                </div>
+                
+            </div>
+        
+                </div></p>
+                <a href="https://github.com/blomma-dev/WeatherWebApp" class="btn btn-outline-light" target="_blank">View on GitHub</a>
                 </div>
             </div>
-            <div class="card bg-dark" style="width: 18rem;">
-
-                <div class="card-body">
-                <h5 class="card-title">View my projects</h5>
-                <p class="card-text">I am always thinking about new projects to start, find the projects I'm most proud of below.</p>
-                <a href="./projects.html" class="btn btn-outline-light">See what I'm learning</a>
-                </div>
-            </div>
-            
-
-            <div class="card bg-dark" style="width: 18rem;">
-
-                <div class="card-body">
-                <h5 class="card-title">What I want to learn</h5>
-                <p class="card-text">Not limited to: front-end, back-end, databases, deployment, AAA, data security, and DevOps.</p>
-                <a href="https://github.com/blomma-dev" target="_blank" class="btn btn-outline-light">Check out my GitHub</a>
-                </div>
-            </div>
-
 
         </div>
 
@@ -86,6 +94,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./resources/scripts/config.js"></script>
+    <script src="./resources/scripts/script.js"></script>
 
 </body>
 </html>
