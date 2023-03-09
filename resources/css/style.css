@@ -55,13 +55,13 @@ body {
 
 #wwa2, #chatbot {
 
-    height: 50%;
+    height: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 25px !important;
-    padding-top: 55px;
+    padding-top: 35px;
 }
 
 #wwa3, #chatbot {
