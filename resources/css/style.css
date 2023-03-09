@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+html,
+body {
+  height: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+  padding-bottom: 40px;
+  background-color: #212529;
+  color: white;
+}
+
+#wwa, #chatbot {
+
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card {
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 2px 1px #eaeae8;
+    padding-bottom: 25px;
+}
+
+.jumbotron-fluid {
+    background-color: #212529;
+}
+
+#me {
+    padding-top: 25px;
+}
+
+#me2 {
+    padding-top: 75px;
+}
+
+#about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 150%;
+}
+
+#main-title {
+    padding-bottom: 15px;
+}
+
+#wwa2, #chatbot {
+
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    padding-top: 55px;
+}
