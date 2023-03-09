@@ -9,4 +9,4 @@ My old website was more of a mess since I did not know proper standards in devel
 
 The website uses a lot of components from the Bootstrap example documentation, tweaked and altered to fit my needs.
 
-upgraded version of my portfolio ver. 2.0
+Added Weather Web App to the website
