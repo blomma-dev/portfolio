@@ -2,6 +2,10 @@
 
 PORTFOLIO 2.0
 
+Features:
+
+
+
 See the website live: https://blomma.dev/
 
 After discovering Bootstrap, I decided to remake my website/portfolio.
