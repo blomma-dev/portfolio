@@ -2,7 +2,7 @@
 
 PORTFOLIO 2.0
 
-See the website live: https://blommadev.fi/
+See the website live: https://blomma.dev/
 
 After discovering Bootstrap, I decided to remake my website/portfolio.
 My old website was more of a mess since I did not know proper standards in development, and was therefore not very easy to work on.
