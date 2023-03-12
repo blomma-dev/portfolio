@@ -2,12 +2,12 @@
 
 html,
 body {
-  height: 100%;
+  margin: 0 auto;
   font-family: 'IBM Plex Mono', monospace;
 }
 
 body {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
   background-color: #212529;
   color: white;
 }
