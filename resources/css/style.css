@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
 html,
 body {
   margin: 0 auto;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 body {
@@ -12,76 +12,89 @@ body {
   color: white;
 }
 
-#wwa, #chatbot {
-
-    height: 80%;
-    display: flex;
-    justify-content: center !important;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 25px;
-    padding-bottom: 25px;
+#wwa,
+#chatbot {
+  height: 80%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .card {
-    margin-bottom: 25px;
-    box-shadow: 5px 5px 2px 1px #eaeae8;
-    padding-bottom: 25px;
-    margin: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 5px 2px 1px #eaeae8;
+  padding-bottom: 25px;
+  margin: 25px;
+}
+
+.card-games {
+  margin-bottom: 25px;
+  box-shadow: 5px 5px 2px 1px #eaeae8;
+  padding-bottom: 25px;
+  margin: 25px;
+  width: 800px !important;
 }
 
 .jumbotron-fluid {
-    background-color: #212529;
+  background-color: #212529;
 }
 
 #me {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 #me2 {
-    padding-top: 75px;
+  padding-top: 75px;
 }
 
 #about {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 150%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 150%;
 }
 
 #main-title {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
-#wwa2, #chatbot {
-
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-bottom: 25px !important;
-    padding-top: 35px;
+#wwa2,
+#chatbot {
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 25px !important;
+  padding-top: 35px;
 }
 
-#wwa3, #chatbot {
+#wwa3,
+#chatbot {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 25px !important;
+  padding-top: 55px;
+}
 
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-bottom: 25px !important;
-    padding-top: 55px;
+.games-logo {
+  max-height: 64px;
+  margin-left: 10px;
 }
 
 #test-deploy {
-    color: white;
+  color: white;
 }
 
-@media (max-width: 767px)  {
-    body {
-        margin-bottom: 30px !important;
-    }
-};
+@media (max-width: 767px) {
+  body {
+    margin-bottom: 30px !important;
+  }
+}
