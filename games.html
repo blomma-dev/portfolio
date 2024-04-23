@@ -16,48 +16,30 @@
     />
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
 
+    <style>
+      /* Responsive image styles */
+      .responsive-image {
+        width: 100%;
+        display: block;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* Hide iframe on screens less than 768px wide */
+        iframe {
+          display: none;
+        }
+        /* Show image on screens less than 768px wide */
+        .responsive-image {
+          display: block;
+        }
+      }
+    </style>
+
     <title>Blomma Games - Homepage</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="./games.html">
-        <img
-          src="./resources/img/blommagames-logo.png"
-          class="d-inline-block align-top games-logo"
-          alt=""
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExample08"
-        aria-controls="navbarsExample08"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div
-        class="collapse navbar-collapse justify-content-md-center"
-        id="navbarsExample08"
-      >
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active btn btn-dark" href="./games.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="./aboutblommagames.html"
-              >About</a
-            >
-          </li>
-          <li class="nav-item"></li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Your Navbar code -->
+    <!-- ... -->
 
     <div class="container" id="wwa2">
       <div class="card-games bg-dark" style="width: 20rem">
@@ -68,7 +50,6 @@
         />
         <div class="card-body">
           <h5 class="card-title">Melon Man</h5>
-
           <p class="card-text">
             Embark on a challenging 2D-platformer journey playing as Melon Man,
             featuring progressively harder levels, obstacles, traps and
@@ -76,15 +57,26 @@
             record time?
           </p>
           <br />
-          <iframe
-            src="https://store.steampowered.com/widget/2928490/"
-            frameborder="0"
-            width="646"
-            height="190"
-          ></iframe>
+          <!-- Container for iframe or img -->
+          <div id="widget-container">
+          <script>
+            if (window.matchMedia("(max-width: 768px)").matches) {
+              // If mobile, display image
+              document.getElementById("widget-container").innerHTML = `
+      <<img src='./resources/img/steam.png' alt='Steam Widget'>>
+    `;
+            } else {
+              // If not mobile, display iframe
+              document.getElementById("widget-container").innerHTML = `
+      <iframe src='https://store.steampowered.com/widget/2928490/' frameborder='0' width='646' height='190'></iframe>
+    `;
+            }
+          </script>
+
+          <br />
           <a
             href="https://apps.microsoft.com/detail/Melon%20Man/9P1WMN81TMFB?launch=true
-	&mode=mini"
+  &mode=mini"
             target="_blank"
           >
             <img
@@ -93,23 +85,24 @@
             />
           </a>
         </div>
-
-        <script
-          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"
-        ></script>
-        <script
-          src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-          crossorigin="anonymous"
-        ></script>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-          crossorigin="anonymous"
-        ></script>
       </div>
     </div>
+
+    <!-- Your scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
